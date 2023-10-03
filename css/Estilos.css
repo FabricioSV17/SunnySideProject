@@ -47,6 +47,7 @@ a {
 .Encabezado {
     width: 100%;
     position: fixed;
+    z-index: 11111;
 }
 
 .Encabezado .container {
@@ -113,9 +114,10 @@ a {
 .seccion1 {
     display: flex;
 }
-
-.seccion1__contenedor1 {
+.contenedorTexto{
     width: 50%;
+}
+.seccion1__contenedor1 {
     padding: 15rem 10rem;
 }
 
@@ -155,7 +157,107 @@ a {
     z-index: -1;
     border-radius: 2rem;
 }
-
-.seccion1__contenedor2{
+.contenedorImagen{
     width: 50%;
+}
+/* .seccion1__contenedor2{
+    width: 50%;
+} */
+/* Seccion 2 */
+.seccion2{
+    width: 100%;
+    display: flex;
+
+}
+.seccion2__contenedor4{
+    margin-top: -.7rem;
+}
+.seccion2__contenedor4 img{
+    width: 100%;
+}
+.contenedor3__titulo {
+    font-size: 4.5rem;
+    color: var(--VeryDarkBlue);
+    font-family: var(--Fraunces);
+}
+.seccion2__contenedor3{
+    padding: 15rem 10rem;
+}
+.contenedor3__parrafo {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-family: var(--Barlow);
+    color: var(--VeryDarkGrayBlue);
+    line-height: 1.5;
+    font-weight: 700;
+}
+.contenedor3__btn {
+    position: relative;
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    color: #000;
+    text-transform: uppercase;
+    font-family: var(--Fraunces);
+    padding: .2rem 1rem;
+}
+
+.contenedor3__btn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .8rem;
+    background: var(--SoftRed);
+    z-index: -1;
+    border-radius: 2rem;
+}
+/* Seccion3 */
+.seccion3{
+    display: flex;
+    position: relative;
+    margin-top: -4.5rem;
+}
+.seccion3__contenedor{
+    position: relative;
+}
+.seccion3__contenedortextos{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 6rem 8rem;
+}
+.tituloGeneral{
+    font-size: 3rem;
+}
+.seccion3__titulo,.seccion3__parrafo{
+    color: var(--DarkDesaturatedCyan);
+}
+.seccion3__titulo2,.seccion3__parrafo{
+    color: var(--DarkBlue);
+}
+.seccion3__parrafo{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+}
+/* Testimonios */
+.Testimonios{
+    width: 100%;
+    padding: 10rem 0;
+}
+.Testimonios__titulo{
+    text-align: center;
+    font-size: 2.8rem;
+    letter-spacing: .8rem;
+    text-transform: uppercase;
+    font-family: var(--Fraunces);
+    font-weight: 800;
+    color: var(--GrayBlue);
+}
+.Testimonios__contenedor{
+    display: flex;
+    margin-top: 10rem;
+    gap: 3rem;
 }
